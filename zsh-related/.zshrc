@@ -114,3 +114,15 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# zinit
+if [ ! -d "$HOME/.zinit" ]; then
+  git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit
+fi
+
+source ~/.zinit/bin/zinit.zsh
+
+# ini "plugin list"-nya
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light agkozak/zsh-z
