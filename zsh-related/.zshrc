@@ -24,7 +24,7 @@ if [[ ! -d "$HOME/.zinit" ]]; then
   git clone https://github.com/zdharma-continuum/zinit.git ~/.zinit
 fi
 
-source ~/.zinit/bin/zinit.zsh
+source ~/.zinit/zinit.zsh
 
 # plugins (zinit)
 zinit light zsh-users/zsh-autosuggestions
